@@ -457,7 +457,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4cca0120c617d014e91169e58a9cdb5a, type: 3}
   m_Resource: {fileID: 8300000, guid: 4cca0120c617d014e91169e58a9cdb5a, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -888,7 +888,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ac1cd1b281ac56b4e8f5cd2e42815035, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 615932923}
   m_SourcePrefab: {fileID: 100100000, guid: ac1cd1b281ac56b4e8f5cd2e42815035, type: 3}
 --- !u!4 &615932921 stripped
 Transform:
@@ -900,6 +903,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac1cd1b281ac56b4e8f5cd2e42815035, type: 3}
   m_PrefabInstance: {fileID: 615932920}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &615932923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615932922}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.48, y: 1.24, z: 2.05}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,8 +1755,8 @@ GameObject:
   - component: {fileID: 904628156}
   - component: {fileID: 904628155}
   - component: {fileID: 904628154}
-  - component: {fileID: 904628157}
   - component: {fileID: 904628158}
+  - component: {fileID: 904628159}
   m_Layer: 0
   m_Name: Tiger
   m_TagString: Untagged
@@ -1752,7 +1776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -1810,7 +1834,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 904628157}
+  mPreview: {fileID: 904628159}
 --- !u!4 &904628156
 Transform:
   m_ObjectHideFlags: 0
@@ -1829,25 +1853,6 @@ Transform:
   - {fileID: 2054550145}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &904628157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904628152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 904628155}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: lion
-  mDatasetName: Vuforia/Synaptic.xml
-  mCastedBehaviour: {fileID: 904628155}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &904628158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1868,6 +1873,25 @@ MonoBehaviour:
   audioSource2: {fileID: 0}
   displayText: Tiger
   displayText2: "\u092C\u093E\u0918"
+--- !u!114 &904628159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904628152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 904628155}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: lion
+  mDatasetName: Vuforia/Synaptic.xml
+  mCastedBehaviour: {fileID: 904628155}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &943850459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2014,7 +2038,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2112,7 +2136,7 @@ GameObject:
   - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2270,7 +2294,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5cce52d8fd1ae3d4fb6cdb6c15e21f67, type: 3}
   m_Resource: {fileID: 8300000, guid: 5cce52d8fd1ae3d4fb6cdb6c15e21f67, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2622,8 +2646,8 @@ GameObject:
   - component: {fileID: 1292572986}
   - component: {fileID: 1292572985}
   - component: {fileID: 1292572984}
-  - component: {fileID: 1292572987}
   - component: {fileID: 1292572988}
+  - component: {fileID: 1292572989}
   m_Layer: 0
   m_Name: Brushing
   m_TagString: Untagged
@@ -2643,7 +2667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -2701,7 +2725,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1292572987}
+  mPreview: {fileID: 1292572989}
 --- !u!4 &1292572986
 Transform:
   m_ObjectHideFlags: 0
@@ -2722,25 +2746,6 @@ Transform:
   - {fileID: 1490385138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1292572987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292572982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1292572985}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: brushing
-  mDatasetName: Vuforia/Synaptic.xml
-  mCastedBehaviour: {fileID: 1292572985}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1292572988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2761,6 +2766,25 @@ MonoBehaviour:
   audioSource2: {fileID: 0}
   displayText: Brushing
   displayText2: "\u092C\u094D\u0930\u0938 \u0917\u0930\u094D\u0926\u0948"
+--- !u!114 &1292572989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292572982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1292572985}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: brushing
+  mDatasetName: Vuforia/Synaptic.xml
+  mCastedBehaviour: {fileID: 1292572985}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1352682404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,6 +3086,56 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1515261572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515261574}
+  - component: {fileID: 1515261575}
+  m_Layer: 0
+  m_Name: InteractionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1515261574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515261572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1515261575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515261572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7ee29fb18978a4097ac9192bc46aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arItems:
+  - name: Dog
+    model: {fileID: 615932922}
+    audioClip: {fileID: 8300000, guid: 5cce52d8fd1ae3d4fb6cdb6c15e21f67, type: 3}
+  audioSource: {fileID: 1103986866}
+  rotationSpeed: 0.6
 --- !u!1 &1534498299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,8 +3509,8 @@ GameObject:
   - component: {fileID: 1571291155}
   - component: {fileID: 1571291154}
   - component: {fileID: 1571291153}
-  - component: {fileID: 1571291156}
   - component: {fileID: 1571291157}
+  - component: {fileID: 1571291158}
   m_Layer: 0
   m_Name: School
   m_TagString: Untagged
@@ -3456,7 +3530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -3514,7 +3588,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1571291156}
+  mPreview: {fileID: 1571291158}
 --- !u!4 &1571291155
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,25 +3607,6 @@ Transform:
   - {fileID: 120634294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1571291156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571291151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1571291154}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: school
-  mDatasetName: Vuforia/Synaptic.xml
-  mCastedBehaviour: {fileID: 1571291154}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1571291157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3572,6 +3627,25 @@ MonoBehaviour:
   audioSource2: {fileID: 0}
   displayText: School
   displayText2: "\u0935\u093F\u0926\u094D\u092F\u093E\u0932\u092F"
+--- !u!114 &1571291158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571291151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1571291154}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: school
+  mDatasetName: Vuforia/Synaptic.xml
+  mCastedBehaviour: {fileID: 1571291154}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1598525657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,7 +3807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -4016,8 +4090,8 @@ GameObject:
   - component: {fileID: 1857535437}
   - component: {fileID: 1857535436}
   - component: {fileID: 1857535435}
-  - component: {fileID: 1857535438}
   - component: {fileID: 1857535439}
+  - component: {fileID: 1857535440}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -4037,7 +4111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -4095,7 +4169,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1857535438}
+  mPreview: {fileID: 1857535440}
 --- !u!4 &1857535437
 Transform:
   m_ObjectHideFlags: 0
@@ -4114,25 +4188,6 @@ Transform:
   - {fileID: 1217875125}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857535438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857535433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1857535436}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: kitchen
-  mDatasetName: Vuforia/Synaptic.xml
-  mCastedBehaviour: {fileID: 1857535436}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1857535439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4153,6 +4208,25 @@ MonoBehaviour:
   audioSource2: {fileID: 0}
   displayText: Kitchen
   displayText2: "\u092D\u093E\u0928\u094D\u0938\u093E"
+--- !u!114 &1857535440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857535433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1857535436}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: kitchen
+  mDatasetName: Vuforia/Synaptic.xml
+  mCastedBehaviour: {fileID: 1857535436}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1906906470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,8 +4492,8 @@ GameObject:
   - component: {fileID: 1980286440}
   - component: {fileID: 1980286439}
   - component: {fileID: 1980286438}
-  - component: {fileID: 1980286441}
   - component: {fileID: 1980286442}
+  - component: {fileID: 1980286443}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -4439,7 +4513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -4497,7 +4571,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1980286441}
+  mPreview: {fileID: 1980286443}
 --- !u!4 &1980286440
 Transform:
   m_ObjectHideFlags: 0
@@ -4516,25 +4590,6 @@ Transform:
   - {fileID: 959739811}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1980286441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980286436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1980286439}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: dog
-  mDatasetName: Vuforia/Synaptic.xml
-  mCastedBehaviour: {fileID: 1980286439}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1980286442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4555,6 +4610,25 @@ MonoBehaviour:
   audioSource2: {fileID: 0}
   displayText: Dog
   displayText2: "\u0915\u0941\u0915\u0941\u0930"
+--- !u!114 &1980286443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980286436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1980286439}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: dog
+  mDatasetName: Vuforia/Synaptic.xml
+  mCastedBehaviour: {fileID: 1980286439}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!43 &2028515898
 Mesh:
   m_ObjectHideFlags: 0
@@ -4799,7 +4873,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4997,3 +5071,4 @@ SceneRoots:
   - {fileID: 1534498303}
   - {fileID: 603687877}
   - {fileID: 742970444}
+  - {fileID: 1515261574}
