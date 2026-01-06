@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="brushing" size="1.000000 1.562212" />
+    <ImageTarget name="cycling" size="1.000000 1.562212" />
+    <ImageTarget name="school" size="1.000000 1.562212" />
+    <ImageTarget name="kitchen" size="1.000000 1.562212" />
+    <ImageTarget name="dog" size="1.000000 1.562212" />
+    <ImageTarget name="lion" size="1.000000 1.562212" />
+  </Tracking>
+</QCARConfig>
