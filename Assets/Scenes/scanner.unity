@@ -326,8 +326,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c1bc1c44cfac41842b2b74086b8e0f76, type: 3}
+  m_Resource: {fileID: 8300000, guid: c1bc1c44cfac41842b2b74086b8e0f76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -576,19 +576,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -596,7 +596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e2998e104fd72d4c8574b9cb6deb342, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -667,8 +667,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d9d5c56de5aac984da3b93a2ce6d58bc, type: 3}
+  m_Resource: {fileID: 8300000, guid: d9d5c56de5aac984da3b93a2ce6d58bc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1063,8 +1063,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 643ad46f374cd544db52e2e4ba403f11, type: 3}
+  m_Resource: {fileID: 8300000, guid: 643ad46f374cd544db52e2e4ba403f11, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2036,8 +2036,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c8e9fe34b2e7dd242933929dabe7bfed, type: 3}
+  m_Resource: {fileID: 8300000, guid: c8e9fe34b2e7dd242933929dabe7bfed, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2421,8 +2421,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3ce10abe01bf0d94bbf3806f55d370be, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3ce10abe01bf0d94bbf3806f55d370be, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2762,10 +2762,10 @@ MonoBehaviour:
   textButton: {fileID: 1645160972}
   soundButton: {fileID: 1906906472}
   closeButton: {fileID: 1949655915}
-  audioSource1: {fileID: 0}
-  audioSource2: {fileID: 0}
+  audioSource1: {fileID: 1598525659}
+  audioSource2: {fileID: 1490385139}
   displayText: Brushing
-  displayText2: "\u092C\u094D\u0930\u0938 \u0917\u0930\u094D\u0926\u0948"
+  displayText2: "\u0926\u093E\u0901\u0924 \u092E\u093E\u091D\u094D\u0928\u0947"
 --- !u!114 &1292572989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2999,8 +2999,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 55c83c4b821b8b0499a77b291429fde7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 55c83c4b821b8b0499a77b291429fde7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3133,7 +3133,10 @@ MonoBehaviour:
   arItems:
   - name: Dog
     model: {fileID: 615932922}
-    audioClip: {fileID: 8300000, guid: 5cce52d8fd1ae3d4fb6cdb6c15e21f67, type: 3}
+    audioClip: {fileID: 8300000, guid: 6a375c837c0f6124182668f4da90f11e, type: 3}
+  - name: Tiger
+    model: {fileID: 794405165}
+    audioClip: {fileID: 8300000, guid: 1c5238a1c9497784b83e7d6981e5f7de, type: 3}
   audioSource: {fileID: 1103986866}
   rotationSpeed: 0.6
 --- !u!1 &1534498299
@@ -3282,8 +3285,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4f4766ad491aa784d89bc519e3a7de39, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4f4766ad491aa784d89bc519e3a7de39, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3411,8 +3414,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 11ee43694f4d6134bb24a76ccef6b1bc, type: 3}
+  m_Resource: {fileID: 8300000, guid: 11ee43694f4d6134bb24a76ccef6b1bc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3623,8 +3626,8 @@ MonoBehaviour:
   textButton: {fileID: 1645160972}
   soundButton: {fileID: 1906906472}
   closeButton: {fileID: 1949655915}
-  audioSource1: {fileID: 0}
-  audioSource2: {fileID: 0}
+  audioSource1: {fileID: 710243301}
+  audioSource2: {fileID: 120634295}
   displayText: School
   displayText2: "\u0935\u093F\u0926\u094D\u092F\u093E\u0932\u092F"
 --- !u!114 &1571291158
@@ -3688,8 +3691,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 11088c97e436aa442bff0d51dbc8a17e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 11088c97e436aa442bff0d51dbc8a17e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3902,8 +3905,8 @@ MonoBehaviour:
   textButton: {fileID: 1645160972}
   soundButton: {fileID: 1906906472}
   closeButton: {fileID: 1949655915}
-  audioSource1: {fileID: 0}
-  audioSource2: {fileID: 0}
+  audioSource1: {fileID: 1558437820}
+  audioSource2: {fileID: 1562928537}
   displayText: Cycling
   displayText2: "\u0938\u093E\u0907\u0915\u0932 \u091A\u0932\u093E\u0909\u0928\u0941"
 --- !u!114 &1617919850
@@ -4204,8 +4207,8 @@ MonoBehaviour:
   textButton: {fileID: 1645160972}
   soundButton: {fileID: 1906906472}
   closeButton: {fileID: 1949655915}
-  audioSource1: {fileID: 0}
-  audioSource2: {fileID: 0}
+  audioSource1: {fileID: 488851158}
+  audioSource2: {fileID: 1217875126}
   displayText: Kitchen
   displayText2: "\u092D\u093E\u0928\u094D\u0938\u093E"
 --- !u!114 &1857535440
@@ -4607,7 +4610,7 @@ MonoBehaviour:
   soundButton: {fileID: 1906906472}
   closeButton: {fileID: 1949655915}
   audioSource1: {fileID: 1103986866}
-  audioSource2: {fileID: 0}
+  audioSource2: {fileID: 959739812}
   displayText: Dog
   displayText2: "\u0915\u0941\u0915\u0941\u0930"
 --- !u!114 &1980286443
@@ -4871,8 +4874,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f17b315ba4b440f46957f7e37afe5f71, type: 3}
+  m_Resource: {fileID: 8300000, guid: f17b315ba4b440f46957f7e37afe5f71, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
