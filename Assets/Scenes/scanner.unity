@@ -3137,6 +3137,9 @@ MonoBehaviour:
   - name: Tiger
     model: {fileID: 794405165}
     audioClip: {fileID: 8300000, guid: 1c5238a1c9497784b83e7d6981e5f7de, type: 3}
+  - name: Cycling
+    model: {fileID: 2101508903}
+    audioClip: {fileID: 8300000, guid: 1f420150c187a994f86d6a2a3712f9cd, type: 3}
   audioSource: {fileID: 1103986866}
   rotationSpeed: 0.6
 --- !u!1 &1534498299
