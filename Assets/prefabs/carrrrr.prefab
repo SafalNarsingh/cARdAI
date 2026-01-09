@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696423344848153607}
+  - component: {fileID: 155937530278979345}
   m_Layer: 0
   m_Name: carrrrr
   m_TagString: Untagged
@@ -32,6 +33,24 @@ Transform:
   - {fileID: 2646792650159838356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155937530278979345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485619242854036939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1846786477afd774cac7868408e73cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayNameEn: Car
+  phonemeEn: "/k\u0251\u02D0r/"
+  displayNameNp: "\u0917\u093E\u0921\u0940"
+  phonemeNp: "/\u0917\u093E-\u0921\u0940/"
+  audioClipEn: {fileID: 8300000, guid: fa6c5b0f82a15c94eb992de7700f3de4, type: 3}
+  audioClipNp: {fileID: 8300000, guid: e431603c073a09a4d8355bc4d658266c, type: 3}
 --- !u!1001 &2536074804740043647
 PrefabInstance:
   m_ObjectHideFlags: 0

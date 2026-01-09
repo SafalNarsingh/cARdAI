@@ -8,7 +8,9 @@ using UnityEngine.InputSystem;
 
 public class ARplace : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private ARRaycastManager raycastManager;
+    [SerializeField] private ARPlacementUIHandler uiHandler; // <--- Drag UI Handler Here
 
     bool isPlacing = false;
     bool hasPlaced = false;   // 🔒 PLACE ONLY ONCE
@@ -37,6 +39,13 @@ public class ARplace : MonoBehaviour
 
         HandlePlacement();
         HandleScaleAndRotation();
+    }
+
+    // --- NEW METHOD: Called by UI Handler when close button is clicked ---
+    public void ResetPlacement()
+    {
+        hasPlaced = false;
+        placedObject = null;
     }
 
     void HandlePlacement()
@@ -85,6 +94,12 @@ public class ARplace : MonoBehaviour
             );
 
             hasPlaced = true;   // 🔒 permanently lock placement
+
+            // --- TRIGGER UI HERE ---
+            if (uiHandler != null)
+            {
+                uiHandler.ShowUIForModel(placedObject);
+            }
         }
 
         StartCoroutine(SetIsPlacingToFalseWithDelay());

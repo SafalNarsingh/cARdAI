@@ -566,9 +566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightText: {fileID: 0}
-  greenSound: {fileID: 8300000, guid: 3421f21bd2b7e8b4c99e2cb73c788e52, type: 3}
+  greenSound: {fileID: 8300000, guid: 291a3ef1bdf6945449970cc60db2c70c, type: 3}
   yellowSound: {fileID: 8300000, guid: a24e043618593284fac1c3b1ffd34aa3, type: 3}
-  redSound: {fileID: 8300000, guid: 291a3ef1bdf6945449970cc60db2c70c, type: 3}
+  redSound: {fileID: 8300000, guid: 3421f21bd2b7e8b4c99e2cb73c788e52, type: 3}
   greenTime: 5
   yellowTime: 2
   redTime: 5
